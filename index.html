@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Vincular al CSS -->
+    <title>Árbol Binario</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Árbol Binario</h1>
+        <div class="input-container">
+            <input type="text" id="grandparentName" placeholder="Nombre del abuelo" />
+            <button onclick="setGrandparent()">Establecer Abuelo</button>
+        </div>
+        <div class="input-container">
+            <input type="text" id="parentName" placeholder="Nombre del padre" />
+            <button onclick="addParent()">Agregar Padre</button>
+        </div>
+        <div class="input-container">
+            <input type="text" id="childName" placeholder="Nombre del hijo" />
+            <button onclick="addChild()">Agregar Hijo</button>
+        </div>
+
+        <!-- Sección para actualizar un nodo -->
+        <div class="input-container">
+            <input type="text" id="oldValue" placeholder="Nombre del nodo a actualizar" />
+            <input type="text" id="newValue" placeholder="Nuevo nombre" />
+            <button onclick="updateNode()">Actualizar Nodo</button>
+        </div>
+
+        <!-- Sección para eliminar un nodo -->
+        <div class="input-container">
+            <input type="text" id="deleteValue" placeholder="Nombre del nodo a eliminar" />
+            <button onclick="deleteNode()">Eliminar Nodo</button>
+        </div>
+
+        <h2>Árbol Actual</h2>
+        <div id="tree"></div>
+
+        <h2>Nodos en el Árbol</h2>
+        <table id="nodeList"></table>
+    </div>
+    <script src="script.js"></script> <!-- Vincular al JS -->
+</body>
+</html>

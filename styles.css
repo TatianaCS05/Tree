@@ -1,0 +1,111 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Arial', sans-serif; /* Tipografía moderna */
+    background-color: #f5f5f5; /* Color de fondo claro */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 800px; /* Ancho máximo */
+    margin: auto; /* Centrar */
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo del título principal */
+h1 {
+    text-align: center;
+    color: #333333; /* Color de texto oscuro */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilos para los nodos del árbol */
+.node {
+    margin: 5px;
+    padding: 15px;
+    border: 1px solid #007bff; /* Borde azul */
+    background-color: #e9f7fe; /* Color de fondo azul claro */
+    color: #333333; /* Color de texto oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+/* Efecto al pasar el ratón por encima de los nodos */
+.node:hover {
+    background-color: #d4effc; /* Color más claro al pasar el ratón */
+}
+
+/* Estructura izquierda y derecha */
+.left, .right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Estilos para la tabla que muestra los valores de los nodos */
+table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Colapsar bordes */
+}
+
+th, td {
+    padding: 10px; /* Espaciado en celdas */
+    border: 1px solid #007bff; /* Borde azul */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+th {
+    background-color: #007bff; /* Color de fondo azul */
+    color: white; /* Texto blanco */
+}
+
+/* Estilos para botones */
+button {
+    padding: 12px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #007bff; /* Color de fondo azul */
+    color: white; /* Color de texto blanco */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro al pasar el ratón */
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"] {
+    padding: 12px;
+    margin: 5px;
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    width: calc(100% - 24px); /* Ajustar ancho para el padding */
+    box-sizing: border-box; /* Incluir padding en el ancho total */
+}
+
+/* Estilo para la descripción */
+p {
+    text-align: center; /* Centrar texto */
+    color: #666666; /* Color gris medio */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilos para el contenedor de la entrada */
+.input-container {
+    display: flex;
+    justify-content: center; /* Centrar los elementos */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilo de la tabla de nodos */
+.table-container {
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espacio interno */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
